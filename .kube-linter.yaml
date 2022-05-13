@@ -6,3 +6,5 @@ checks:
   - "non-isolated-pod"
   - "required-annotation-email"
   - "required-label-owner"
+  - "privilege-escalation-container"
+  - "privileged-container"
