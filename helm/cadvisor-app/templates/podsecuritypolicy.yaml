@@ -5,6 +5,8 @@ metadata:
   labels:
     {{- include "labels.common" . | nindent 4 }}
 spec:
+  privileged: true
+  allowPrivilegeEscalation: true
   seLinux:
     rule: RunAsAny
   supplementalGroups:
