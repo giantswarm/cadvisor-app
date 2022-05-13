@@ -15,9 +15,12 @@ spec:
         {{- include "labels.common" . | nindent 8 }}
     spec:
       serviceAccountName: {{ include "resource.default.name" . }}
+      priorityClassName: system-node-critical
       containers:
       - name: {{ .Values.name }}
         image: "{{ .Values.image.registry }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
+        securityContext:
+          readOnlyRootFilesystem: true
         resources:
           requests:
             memory: "{{ .Values.resources.requests.memory }}"

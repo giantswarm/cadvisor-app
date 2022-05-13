@@ -1,0 +1,5 @@
+checks:
+  addAllBuiltIn: true
+  exclude:
+  - "run-as-non-root"
+  - "sensitive-host-mounts"
