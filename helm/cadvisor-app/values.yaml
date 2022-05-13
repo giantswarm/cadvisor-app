@@ -20,7 +20,7 @@ resources:
     memory: 200Mi
     cpu: 200m
 
-port: 8080
+port: 10260
 
 # controller.livenessProbe
 # Liveness probe configuration
