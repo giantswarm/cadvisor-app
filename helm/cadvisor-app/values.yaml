@@ -1,4 +1,5 @@
 name: cadvisor
+namespace: kube-system
 serviceType: managed
 
 project:

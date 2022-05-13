@@ -3,3 +3,6 @@ checks:
   exclude:
   - "run-as-non-root"
   - "sensitive-host-mounts"
+  - "non-isolated-pod"
+  - "required-annotation-email"
+  - "required-label-owner"
