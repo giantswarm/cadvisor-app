@@ -8,3 +8,4 @@ checks:
   - "required-label-owner"
   - "privilege-escalation-container"
   - "privileged-container"
+  - "host-network"
