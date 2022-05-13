@@ -8,6 +8,9 @@ spec:
   privileged: true
   allowPrivilegeEscalation: true
   hostNetwork: true
+  hostPorts:
+  - min: {{ .Values.port }}
+    max: {{ .Values.port }}
   seLinux:
     rule: RunAsAny
   supplementalGroups:
