@@ -18,13 +18,12 @@ spec:
     spec:
       serviceAccountName: {{ include "resource.default.name" . }}
       priorityClassName: system-node-critical
-      securityContext:
-        privileged: true
       containers:
       - name: {{ .Values.name }}
         image: "{{ .Values.image.registry }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
         securityContext:
           readOnlyRootFilesystem: true
+          privileged: true
         resources:
           requests:
             memory: "{{ .Values.resources.requests.memory }}"
