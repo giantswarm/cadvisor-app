@@ -1,9 +1,9 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/{APP-NAME}-app.svg?style=shield)](https://circleci.com/gh/giantswarm/{APP-NAME}-app)
+[![CircleCI](https://circleci.com/gh/giantswarm/cadvisor-app.svg?style=shield)](https://circleci.com/gh/giantswarm/cadvisor-app)
 
-# {APP-NAME} chart
+# cadvisor chart
 
-Giant Swarm offers a {APP-NAME} App which can be installed in workload clusters.
-Here we define the {APP-NAME} chart with its templates and default configuration.
+Giant Swarm offers a cadvisor App which can be installed in workload clusters.
+Here we define the cadvisor chart with its templates and default configuration.
 
 **What is this app?**
 
@@ -53,15 +53,15 @@ See our [full reference on how to configure apps](https://docs.giantswarm.io/app
 
 This app has been tested to work with the following workload cluster release versions:
 
-- _add release version_
+- None yet.
 
 ## Limitations
 
 Some apps have restrictions on how they can be deployed.
 Not following these limitations will most likely result in a broken deployment.
 
-- _add limitation_
+- None known.
 
 ## Credit
 
-- {APP HELM REPOSITORY}
+- https://github.com/google/cadvisor/tree/master/deploy/kubernetes
