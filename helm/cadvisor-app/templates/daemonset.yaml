@@ -18,7 +18,7 @@ spec:
     spec:
       serviceAccountName: {{ include "resource.default.name" . }}
       priorityClassName: system-node-critical
-      hostNetwork: true
+      hostNetwork: false
       containers:
       - name: {{ .Values.name }}
         image: "{{ .Values.image.registry }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
