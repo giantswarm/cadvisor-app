@@ -9,3 +9,5 @@ checks:
   - "privilege-escalation-container"
   - "privileged-container"
   - "host-network"
+  - "unset-cpu-requirements"
+  - "unset-memory-requirements"
