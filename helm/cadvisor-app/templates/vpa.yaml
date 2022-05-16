@@ -10,7 +10,7 @@ spec:
   resourcePolicy:
     containerPolicies:
     - containerName: {{ .Chart.Name }}
-      controlledValues: RequestsAndLimits
+      controlledValues: RequestsOnly
       mode: Auto
   targetRef:
     apiVersion: apps/v1
