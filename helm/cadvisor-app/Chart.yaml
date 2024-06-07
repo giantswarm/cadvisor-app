@@ -11,6 +11,6 @@ sources:
 - https://github.com/google/cadvisor
 version: 0.44.0-gs1
 annotations:
-  application.giantswarm.io/team: Phoenix
+  application.giantswarm.io/team: phoenix
   branch: main
   commit: ""
